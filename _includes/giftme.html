@@ -1,0 +1,10 @@
+{% assign gift-card-link = site.pages | where:"sibling", "gift-card" | where:"lang", page.lang %}
+
+<a id="giftme" class="btn btn-giftme btn-block btn-lg" href="{{ gift-card-link[0].url | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.lang == 'cat' %}
+    Regala una sessió de Shiatsu
+  {% else %}
+    Regala una sesión de Shiatsu
+  {% endif %}
+</a>
+

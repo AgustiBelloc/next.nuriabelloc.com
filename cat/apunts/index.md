@@ -2,7 +2,7 @@
 layout: page
 title: Apunts
 description: Apunts de Shiatsu
-menu: true
+menu: false
 # sibling: notes
 ---
 <div class="list-group">

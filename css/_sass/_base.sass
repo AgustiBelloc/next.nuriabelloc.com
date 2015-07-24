@@ -145,6 +145,8 @@ hr
     padding: .0 3rem
     +respond-to(phone)
       font-size: 1.5rem
+    + ol
+      margin-top: 1em
   p
     line-height: 1.6em
     strong
@@ -243,6 +245,14 @@ hr
   +button-variant($soft-color, rgba($primary-color, .8), rgba($primary-color, .8))
   margin-bottom: 1rem
   white-space: normal
+.btn-giftme
+  font-family: $font-titles
+  text-transform: uppercase
+  letter-spacing: .1em
+  font-weight: bold
+  +button-variant($highlight-color, $alternate-color, $alternate-color)
+  margin-bottom: 1rem
+  white-space: normal
 .btn-primary
   +button-variant($soft-color, $primary-color, $primary-color)
 .btn-secondary
@@ -250,3 +260,5 @@ hr
 
 svg
   fill: currentColor
+.help-block
+  color: rgba($hard-color, .7)
