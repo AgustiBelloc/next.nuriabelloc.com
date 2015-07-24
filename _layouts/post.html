@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post row {{ page.sibling }}">
+  <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+    <div class="main-content">
+
+      {% if page.sibling != null %}
+        {% include lang-switcher.html %}
+      {% endif %}
+      <h1 class="title">{{page.title}}</h1>
+
+      {{content}}
+
+    </div>
+  </div>
+</div>
+{% include callout.html %}
+<style type="text/css">
+  .post .title {font-family: 'Cutive Mono';}
+</style>
